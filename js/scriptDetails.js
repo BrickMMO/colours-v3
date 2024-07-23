@@ -27,13 +27,17 @@ window.onload = function() {
             is_trans.innerHTML = `<strong>Is Translucent?: </strong>${uppercaseFirst(data.colours.is_trans)}`;
             rebrickable_id.innerHTML = `<strong>Rebrickable ID: </strong>${data.colours.rebrickable_id}`;
 
-            let textExternals = data.colours.external_ids.map(colorExternal => 
-                `<li>
-                    <p><strong>${uppercaseFirst(colorExternal.source)} </strong>→ ${colorExternal.name}</p>
-                </li>`
-            ).join('');
-
-            externals.innerHTML = textExternals;
+            if(data.colours.external_ids){
+                let textExternals = data.colours.external_ids.map(colorExternal => 
+                    `<li>
+                        <p><strong>${uppercaseFirst(colorExternal.source)} </strong>→ ${colorExternal.name}</p>
+                    </li>`
+                ).join('');
+    
+                externals.innerHTML = textExternals;
+            } else{
+                document.getElementById("externals_section").style.display = "none"
+            }
         },
         error: function(jqXHR, textStatus, errorThrown) {
             console.error("Error when calling API:", textStatus, errorThrown);
