@@ -39,5 +39,39 @@ function searchColour(keyword) {
             colour.style.display = "none";
         }
     });
+
+    const regexHex = /^([0-9A-F]{3}|[0-9A-F]{6})$/i;
+
+    if(!existColour(keyword)){
+
+        let notMatch = document.getElementById('notMatch');
+        if(regexHex.test(keyword)){
+            notMatch.innerHTML = 
+            `<h2>Sorry, the colour <strong>${keyword}</strong> is not in our Database</h2>
+            <h3>The closest colour is:</h3>`;
+        } else{
+            notMatch.innerHTML = 
+            `<h2>Sorry, the colour <strong>${keyword}</strong> is not a valid colour</h2>
+            <h3>Please provide a valid pattern of <strong>Six-digit format (e.g. FF5B00)</strong> or <strong>Three-digit format (e.g. F50)</strong></h3>`;
+        }
+    } else {
+        notMatch.innerHTML = "";
+    }
+    
 }
 
+function existColour(keyword) {
+    keyword = keyword.toLowerCase();
+    let colours = document.querySelectorAll('.w3-container.w3-col.l2.m3.s6');
+
+    for (let i = 0; i < colours.length; i++) {
+        let nameTag = colours[i].children[0].children[1].innerHTML.toLowerCase();
+        let rgbTag = colours[i].children[0].children[2].innerHTML.toLowerCase();     
+        
+        if (nameTag.includes(keyword) || rgbTag.includes(keyword)) {
+            return true;
+        }
+    }
+
+    return false;
+}
