@@ -4,7 +4,7 @@ window.onload = function() {
 
     const id = urlParams.get('id');
 
-    let url = `http://local.console.brickmmo.com:7777/api/colours/details/${id}`;
+    let url = `https://console.brickmmo.com/api/colours/details/${id}`;
 
     let h1 = document.getElementById("h1_colour")
     let color_div = document.getElementById("color_div")
