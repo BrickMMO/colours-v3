@@ -1,12 +1,11 @@
 window.onload = function() {
 
-    const proper = [
-            'lego' => 'LEGO',
-            'ldraw' => 'LDraw',
-            'peeron' => 'Peeron',
-            'bricklink' => 'BrickLink',
-            'brickowl' => 'BrickOwl',
-        ];
+    const proper = [];
+    proper['lego'] = 'LEGO';
+    proper['ldraw'] = 'LDraw';
+    proper['peeron'] = 'Peeron';
+    proper['bricklink'] = 'BrickLink'
+    proper['brickowl'] = 'BrickOwl';
 
     const urlParams = new URLSearchParams(window.location.search);
 
