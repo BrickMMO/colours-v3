@@ -1,5 +1,13 @@
 window.onload = function() {
 
+    const proper = [
+            'lego' => 'LEGO',
+            'ldraw' => 'LDraw',
+            'peeron' => 'Peeron',
+            'bricklink' => 'BrickLink',
+            'brickowl' => 'BrickOwl',
+        ];
+
     const urlParams = new URLSearchParams(window.location.search);
 
     const id = urlParams.get('id');
@@ -30,7 +38,7 @@ window.onload = function() {
             if(data.colours.external_ids){
                 let textExternals = data.colours.external_ids.map(colorExternal => 
                     `<li>
-                        <p><strong>${(colorExternal.source)} </strong>→ ${colorExternal.name}</p>
+                        <p><strong>${proper[colorExternal.source]} </strong>→ ${colorExternal.name}</p>
                     </li>`
                 ).join('');
     
