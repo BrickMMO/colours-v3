@@ -30,7 +30,7 @@ window.onload = function() {
             if(data.colours.external_ids){
                 let textExternals = data.colours.external_ids.map(colorExternal => 
                     `<li>
-                        <p><strong>${uppercaseFirst(colorExternal.source)} </strong>→ ${colorExternal.name}</p>
+                        <p><strong>${(colorExternal.source)} </strong>→ ${colorExternal.name}</p>
                     </li>`
                 ).join('');
     
