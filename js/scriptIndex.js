@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    let url = "https://console.brickmmo.com/api/colours";
+    let url = "https://console.brickmmo.com/api/colour/list";
 
     $.ajax({
         url: url,
@@ -84,7 +84,7 @@ function checkPalette(keyword) {
 
 function matchColour(keyword){
 
-    let url = `https://console.brickmmo.com/api/colours/match/${keyword}`;
+    let url = `https://console.brickmmo.com/api/colour/match/${keyword}`;
 
     $.ajax({
         url: url,
