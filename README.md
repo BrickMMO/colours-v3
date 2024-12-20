@@ -4,8 +4,8 @@ A colour palette tool for LEGO® bricks and an API for use with the BrickMMO Sma
 
 This version will not expand on [colours-v2](https://github.com/BrickMMO/colours-v1), it will be a from scratch build. 
 
-> Information on system development and contributions:
-> [https://flow.brickmmo.co](https://brickmmo.github.io/colours-about/)
+> This repo is available to view at  
+> [https://colours.brickmmo.com](https://colours.brickmmo.com)
 
 ---
 
