@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    let url = "https://console.brickmmo.com/api/colour/list";
+    let url = "https://api.brickmmo.com/colour/list";
 
     $.ajax({
         url: url,
