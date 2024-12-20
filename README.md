@@ -11,9 +11,9 @@ This version will not expand on [colours-v2](https://github.com/BrickMMO/colours
 
 ## Project Stack
 
-This application will intentionally be written in a simplified structure with a simple stack. 
+This project uses a [jQuery](https://jquery.com/), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and is hosted using [GitHub Pages](https://pages.github.com/).
 
-<img src="https://console.codeadam.ca/api/image/w3css" width="60"> <img src="https://console.codeadam.ca/api/image/html" width="60"> <img src="https://console.codeadam.ca/api/image/css" width="60"> <img src="https://console.codeadam.ca/api/image/javascript" width="60">
+<img src="https://console.codeadam.ca/api/image/jquery" width="60"> <img src="https://console.codeadam.ca/api/image/html" width="60"> <img src="https://console.codeadam.ca/api/image/css" width="60"> <img src="https://console.codeadam.ca/api/image/javascript" width="60"> <img src="https://console.codeadam.ca/api/image/github" width="60">
 
 ---
 
