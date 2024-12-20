@@ -11,7 +11,7 @@ window.onload = function() {
 
     const id = urlParams.get('id');
 
-    let url = `https://console.brickmmo.com/api/colours/details/${id}`;
+    let url = `https://api.brickmmo.com/colours/details/${id}`;
 
     let h1 = document.getElementById("h1_colour")
     let color_div = document.getElementById("color_div")
