@@ -84,7 +84,7 @@ function checkPalette(keyword) {
 
 function matchColour(keyword){
 
-    let url = `https://console.brickmmo.com/api/colour/match/${keyword}`;
+    let url = `https://api.brickmmo.com/colour/match/${keyword}`;
 
     $.ajax({
         url: url,
